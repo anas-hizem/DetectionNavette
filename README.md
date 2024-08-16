@@ -1,4 +1,4 @@
-# Projet de Détection de Panneaux et Suivi de Personnes
+# Reformulation et Nettoyage du Projet "Système de Détection des objects"
 
 Ce projet utilise les modèles YOLO (You Only Look Once) pour la détection d'objets et SORT (Simple Online and Realtime Tracking) pour le suivi des personnes en temps réel. Il est conçu pour analyser les vidéos et détecter des panneaux spécifiques et des personnes, tout en suivant leurs mouvements à travers les images.
 
