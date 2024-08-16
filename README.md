@@ -40,12 +40,41 @@ Par défaut, le script utilise une vidéo locale (test3.mp4). Vous pouvez modifi
 - **sort.py** : Implémentation de SORT pour le suivi en temps réel des objets détectés.
 
 
+## Détails des Fichiers
+
+1. **PanelDetection.py** :
+
+Ce script ouvre un flux vidéo, initialise le modèle YOLO et le tracker SORT, et traite chaque cadre de la vidéo. Les objets détectés sont affichés en temps réel.
+
+### Fonctionnalités :
+
+- Capture vidéo depuis un fichier local ou un flux en direct.
+- Détection d'objets avec YOLO.
+- Suivi des personnes avec SORT.
+- Affichage en temps réel des résultats de détection et de suivi.
+
+2. **utils_prin.py** :
+
+Ce fichier contient des fonctions auxiliaires pour l'initialisation du modèle YOLO et du tracker SORT, la gestion des détections, et l'affichage des résultats.
+   
+
+### Fonctionnalités :
+
+- initialize_model_and_tracker(): Initialise le modèle YOLO et le tracker SORT.
+- perform_inference(): Effectue la détection d'objets.
+- process_and_display_results(): Affiche les résultats de détection et de suivi sur l'image.
 
 
 
+3. **sort.py** :
 
+Implémente le suivi en temps réel des objets en utilisant le filtre de Kalman et l'algorithme SORT.   
 
+### Fonctionnalités :
 
+- Suivi des objets à l'aide de Kalman Filter.
+- Association des détections aux objets suivis.
+- Gestion des objets détectés et suivis à travers plusieurs images.
 
 
 
